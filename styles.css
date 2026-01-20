@@ -104,6 +104,62 @@ section {
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
+/* IMAGE MODAL (LIGHTBOX) */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.8);
+    animation: zoomIn 0.3s ease;
+}
+
+#modalCaption {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* CLOSE BUTTON */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #ff4e50;
+}
+
+/* ANIMATION */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
       /* About Me Section */
 #about {
