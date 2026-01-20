@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#screenshots">Capstone Screenshots</a>
+</nav>
+
+<!-- HOME -->
+<header id="home">
+    <div class="home-container">
+        <div class="anime-gif">
+            <img src="anime.gif" alt="Anime">
+        </div>
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                Explore my journey in technology, showcasing my skills,
+                projects, and growth as a developer.
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+        <img src="profile.jpg" alt="Profile" id="profilePic">
+
+        <div class="about-content" id="aboutContent">
+            <h3>Hello! I'm Alexander Del Castillo</h3>
+            <p>
+                I am a fourth-year BSIT student at Cavite State University – Silang Campus.
+                I focus on full-stack development using HTML, CSS, JavaScript, PHP,
+                and other programming languages.
+            </p>
+            <a href="Resume_ABDC.pdf" target="_blank" download>
+                Click For My Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- What I Can Offer Section --> 
+ <section id="services"> 
+    <div class="container">
+     <h2>What I Can Offer?</h2> <div class="services-container">
+         <div class="service-box"> <h3>Full-Stack Development</h3> 
+            <p>I am proficient in both front-end and back-end development, enabling me to create fully functional web applications from the ground up.</p> 
+        </div> <div class="service-box">
+             <h3>Front-End Expertise</h3>
+              <p>With expertise in HTML, CSS, and JavaScript, I can design responsive, visually engaging, and interactive user interfaces.</p> 
+            </div> <div class="service-box"> 
+                <h3>Back-End Proficiency</h3> 
+                <p>My expertise in PHP, Python, Java, and C# enables me to build reliable server-side logic, effectively manage databases, and maintain seamless functionality for web applications.</p> 
+            </div> 
+        </div> 
+    </div> 
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+        <div class="project">
+            <a href="https://github.com/Alex-xander12/BlakInk" target="_blank">
+                <img src="blakink.png">
+            </a>
+            <p class="project-label">Blak Ink</p>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/Alex-xander12/Event-place-Application" target="_blank">
+                <img src="event.jpg">
+            </a>
+            <p class="project-label">Event Reservation</p>
+        </div>
+    </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section id="screenshots">
+    <h2>One Health System Screenshots</h2>
+
+    <div class="projects-container">
+
+        <!-- ADMIN (PC) -->
+        <div class="project">
+            <img src="screenshot one health/Admin dashboard 1 (pc).png"
+                 alt="Admin Dashboard (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Dashboard (PC)</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Admin dashboard 2 (pc).png"
+                 alt="Admin Dashboard 2 (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Dashboard 2 (PC)</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Admin Panel (pc only).png"
+                 alt="Admin Panel (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Panel</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Admin add account (pc).png"
+                 alt="Admin Add Account (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Add Account</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Admin add immunization (pc).png"
+                 alt="Admin Add Immunization (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Add Immunization</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Admin add pregnancy (pc).png"
+                 alt="Admin Add Pregnancy (PC)"
+                 onclick="openImage(this)">
+            <p class="project-label">Admin Add Pregnancy</p>
+        </div>
+
+        <!-- BHW (MOBILE) -->
+        <div class="project">
+            <img src="screenshot one health/BHW dashboard 1 (mobile).jpg"
+                 alt="BHW Dashboard (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Dashboard (Mobile)</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/BHW dashboard 2 (mobile).jpg"
+                 alt="BHW Dashboard 2 (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Dashboard 2</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/BHW dashboard 3 (mobile).jpg"
+                 alt="BHW Dashboard 3 (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Dashboard 3</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/BHW add patient (mobile).jpg"
+                 alt="BHW Add Patient (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Add Patient</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/BHW add patient immunization (mobile).jpg"
+                 alt="BHW Add Immunization (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Add Immunization</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/BHW add patient preganancy (mobile).jpg"
+                 alt="BHW Add Pregnancy (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">BHW Add Pregnancy</p>
+        </div>
+
+        <!-- PATIENT (MOBILE) -->
+        <div class="project">
+            <img src="screenshot one health/patient access (mobile).jpg"
+                 alt="Patient Access (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Patient Access</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/patient dashboard (mobile).jpg"
+                 alt="Patient Dashboard (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Patient Dashboard</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/patient immunization card (mobile).jpg"
+                 alt="Patient Immunization Card (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Immunization Card</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/patient schedule upcoming (mobile).jpg"
+                 alt="Patient Upcoming Schedule (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Upcoming Schedule</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/patient record (mobile).jpg"
+                 alt="Patient Record (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Patient Record</p>
+        </div>
+
+        <!-- LANDING -->
+        <div class="project">
+            <img src="screenshot one health/Landing Page (Desktop).png"
+                 alt="Landing Page (Desktop)"
+                 onclick="openImage(this)">
+            <p class="project-label">Landing Page (Desktop)</p>
+        </div>
+
+        <div class="project">
+            <img src="screenshot one health/Landing Page (Mobile).png"
+                 alt="Landing Page (Mobile)"
+                 onclick="openImage(this)">
+            <p class="project-label">Landing Page (Mobile)</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-item">
+            <span>📍</span>
+            <div>
+                <p>General Mariano Alvarez</p>
+                <p>Cavite, Philippines 4117</p>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <span>📞</span>
+            <div>
+                <p>0977 168 XXXX</p>
+                <p>Not available right now</p>
+            </div>
+        </div>
+
+        <div class="footer-item">
+            <span>✉️</span>
+            <div>
+                <p>
+                    <a href="mailto:alexdelcastillo12@gmail.com">
+                        alexdelcastillo12@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <p>Connect With Me:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/rednaxela.pps5" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/prollyoverder_/" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/Alex-xander12" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- SCRIPT -->
+<script>
+    const profilePic = document.getElementById("profilePic");
+    const aboutContent = document.getElementById("aboutContent");
+
+    profilePic.onclick = () => {
+        aboutContent.classList.toggle("hidden");
+    };
+</script>
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <p id="modalCaption"></p>
+</div>
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const captionText = document.getElementById("modalCaption");
+    const closeBtn = document.querySelector(".close-modal");
+
+    function openImage(img) {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        captionText.textContent = img.alt;
+    }
+
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>
